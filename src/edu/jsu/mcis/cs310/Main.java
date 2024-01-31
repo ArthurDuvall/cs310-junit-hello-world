@@ -1,7 +1,7 @@
 package edu.jsu.mcis.cs310;
 
 public class Main {
-
+    
     public static void main(String[] args) {
         
         Main m = new Main();
@@ -13,10 +13,14 @@ public class Main {
     }
     
     public String getGreeting() {
-        return "Hello, World!";
+        String message = "Hello, World!";
+        return message;
     }
     
     public String reverse(String message) {
+        StringBuilder Reverse = new StringBuilder(message);
+        Reverse.reverse();
+        message = Reverse.toString();
         return message;
     }
     
